@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: javajava-java-sample-11hy
+  namespace: e2e-demos-bueu-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:6578e412ebb6d56a28beadd2ff4a352f3797febc9472d448b2a1c5706ee9cd6c
+        name: my-java-springboot
+        resources: {}
+status: {}
